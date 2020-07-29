@@ -40,13 +40,16 @@ function CalcularPrecio() {
   else if (vCantidad == 3 && vMarca == "FelipeLamparas") {
     vDescuento = vPrecio * 0.9;
   }
-  else {
+  else if (vCantidad == 3 && vMarca != "ArgentinaLuz" || vMarca != "FelipeLamparas") {
     vDescuento = vPrecio * 0.95;
+  }
+  else {
+    vDescuento = vPrecio * 1;
   }
   document.getElementById("txtIdprecioDescuento").value = vDescuento;
   vImporteFinal = vDescuento * vCantidad;
   if (vImporteFinal > 120) {
-    vIIBB = vImporteFinal * 1.1
+    vIIBB = vImporteFinal * 1.1;
     alert("Usted pago  " + vIIBB.toFixed(2) + " de IIBB");
   }
   else {

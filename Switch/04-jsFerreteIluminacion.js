@@ -22,7 +22,7 @@ function CalcularPrecio() {
   switch (vCantidad) {
     case 1:
     case 2:
-      vPrecioDescuento = vPrecio * 0;
+      vPrecioDescuento = vPrecio * 1;
       break;
     case 3:
       if (vMarca == "ArgentinaLuz") {
