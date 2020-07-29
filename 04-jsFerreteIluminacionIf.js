@@ -47,7 +47,7 @@ function CalcularPrecio() {
   vImporteFinal = vDescuento * vCantidad;
   if (vImporteFinal > 120) {
     vIIBB = vImporteFinal * 1.1
-    alert("Usted pago  " + vIIBB.toFixed(2) + "de IIBB");
+    alert("Usted pago  " + vIIBB.toFixed(2) + " de IIBB");
   }
   else {
     alert(vImporteFinal);
